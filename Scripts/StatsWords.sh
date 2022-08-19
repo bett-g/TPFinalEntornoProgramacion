@@ -1,8 +1,10 @@
 #!/bin/bash
-
+# Enunciado:
+# Indicador estadistico de palabras (la mas larga, la mas corta y el promedio de longitud)
 echo "Indicador estadistico de palabras"
 echo "---------------------------------"
 
+# Asingamos el archivo a una variable
 texto=$1
 # Se cuenta la cantidad de palabras con wc -w (words)
 # Se utiliza pipe para pasar el resultado obtenido hacia grep -o para buscar los numeros mediante una expresion regular, con -o (only-matching) nos posicionamos en la primera columna
