@@ -1,17 +1,18 @@
 FROM ubuntu
 MAINTAINER Betsabe Gomez "betsabe.g2@gmail.com"
-# Se descarga las aplicaciones usadas por el scripts que no estan disponibles en la imagen oficial.
+
 RUN apt-get update && apt-get install -y gawk bc locales && apt-get clean && rm -rf /var/lib/apt/lists/*
-# Se configura el idioma al español argentino UTF-8.
+
+# Configuracion de idioma 
 RUN locale-gen es_AR.UTF-8  
 
 ENV LANG es_AR.UTF-8
 ENV LANGUAGE es_AR:es  
 ENV LC_ALL es_AR.UTF-8  
 
-# Se copia los scripts y el menú.
+# Se copia los scripts y el menú
 COPY menu de opciones.sh .
 COPY Scripts /Scripts
 
-# Cuando se inicia el container se ejecuta el menú.
+# Ejecutar el menú
 ENTRYPOINT ["/bin/bash", "/menu de opciones.sh"]
