@@ -1,9 +1,11 @@
-# Tecnicatura Universitaria en Inteligencia Artificial: Entorno de Programacion - Trabajo Practico Final
-# Trabajo Final de Entorno de Programación
-# Integrante: 
+# Universidad Nacional de Rosario / FCEIA
+## Tecnicatura Universitaria en Inteligencia Artificial
+## Entorno de Programacion
+## Trabajo Final de Entorno de Programación
+## Integrante: 
 Betsabé Gómez
 
-# Descripción:
+## Descripción:
 
 Analisis de texto sencillo, los 5 scripts tienen las siguientes funcionalidades:
 
@@ -14,7 +16,7 @@ Analisis de texto sencillo, los 5 scripts tienen las siguientes funcionalidades:
     4) statsSentences.sh: Indicador estadístico de longitud de oraciones (la más corta, la más larga y el promedio de longitud).
     5) blankLinesCounter.sh: Contador de líneas en blanco.
     
-# Modo de uso:
+## Instrucciones:
 
 **Primer paso:** Tener instalado docker sino lo tiene instalado seguir el tutorial del siguiente enlace: Digital Ocean luego de terminar con los pasos se recomienda reiniciar el equipo.
 
