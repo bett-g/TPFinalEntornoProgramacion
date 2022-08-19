@@ -24,10 +24,12 @@ Comandos utiles:
 
 ## Instrucciones:
 
-**Paso 1:** Ingresar a la carpeta con `cd TPFinalEntornoProgramacion`
+**Paso 1:** Clonar el repositorio en una carpeta determinada `git clone hhttps://github.com/bett-g/TPFinalEntornoProgramacion`
 
-**Paso 2:** Ejecutar `docker build . -t tpep`
+**Paso 2:** Ingresar a la carpeta con `cd TPFinalEntornoProgramacion`
 
-**Paso 3:** Ejecutar `docker container run -it -v $(pwd)/Pruebas:/Pruebas:ro --rm tpep`
+**Paso 3:** Ejecutar `docker build . -t tpep`
+
+**Paso 4:** Ejecutar `docker container run -it -v $(pwd)/Pruebas:/Pruebas:ro --rm tpep`
 
 
