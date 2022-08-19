@@ -28,6 +28,6 @@ Comandos utiles:
 
 **Paso 2:** Ejecutar `docker build . -t tpep`
 
-**Paso 3:** Ejecutar `docker container run -it -v $(pwd)/texto:/texto:ro --rm tpep`
+**Paso 3:** Ejecutar `docker container run -it -v $(pwd)/Pruebas:/Pruebas:ro --rm tpep`
 
 

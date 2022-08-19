@@ -6,7 +6,7 @@ echo -ne "
 2) Uso de palabras             5) Contador de lineas en blanco
 3) Nombres propios             0) Volver al menú principal
 C) Limpiar pantalla
-Opciones: "
+Bienvenidos! Seleccione una de las siguientes opciones para continuar: "
 read opcion
 case $opcion in
         1) ./Scripts/StatsWords.sh $tex ; submenu $tex ;;
@@ -21,14 +21,14 @@ esac
 }
 
 menu(){
-echo "Seleccionar un TEXTO de texto"
-ls /texto/
+echo "Bienvenidos! Por favor, seleccione un texto a analizar"
+ls ./Pruebas
 read
-if [ -r /texto/$REPLY ] && [ -f /texto/$REPLY ]
+if [ -r ./Pruebas/$REPLY ] && [ -f ./Pruebas/$REPLY ]
 then
-    submenu /texto/$REPLY
+    submenu ./Pruebas/$REPLY
 else
-    echo "No tiene permisos de lectura o no existe"
+    echo "Error! No existe la opcion o no tiene permisos"
 fi
 }
 
